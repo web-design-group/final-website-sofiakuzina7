@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    background: #f5f5f5;
+}
+
+/* ========== ШАПКА ========== */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    padding: 16px 0;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    transition: color 0.2s ease;
+    text-transform: lowercase;
+}
+
+.main-nav a:hover {
+    color: #ffaa00;
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: #cccccc;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+
+.lang-btn.active {
+    color: #cccccc;
+}
+
+.lang-btn:hover {
+    color: #ffaa00;
+}
+
+.lang-switch span {
+    color: #666;
+}
+
+.header-placeholder {
+    width: 80px;
+    visibility: hidden;
+}
+
+/* ========== СЕКЦИЯ ОТЗЫВОВ ========== */
+.reviews-section {
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #888;
+}
+
+/* Сетка отзывов */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Карточка отзыва - минималистичный прямоугольник */
+.review-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    transition: all 0.3s ease;
+    border: 1px solid #e8e8e8;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+    border-color: #ddd;
+    box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.08);
+}
+
+/* Текст отзыва */
+.review-card .review-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 28px;
+    font-style: normal;
+}
+
+/* Автор */
+.review-author {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.author-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.author-position {
+    font-size: 13px;
+    color: #999;
+}
+
+/* ========== ПОДВАЛ ========== */
+.site-footer {
+    background: #1a1a1a;
+    padding: 60px 0 20px;
+    margin-top: 0;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 48px;
+}
+
+.footer-logo h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.footer-tagline {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.address {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+.address a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.address a:hover {
+    color: #ffaa00;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+
+.social-links {
+    list-style: none;
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #aaa;
+    transition: color 0.2s;
+    font-size: 14px;
+}
+
+.social-links a:hover {
+    color: #ffaa00;
+}
+
+.talk-block {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.talk-block span {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #ccc;
+}
+
+.footer-talk-btn {
+    background: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #1a1a1a;
+}
+
+.footer-talk-btn:hover {
+    background: #ffaa00;
+    color: #1a1a1a;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    font-size: 12px;
+    color: #666;
+}
+
+/* ========== АДАПТИВНОСТЬ ========== */
+@media (max-width: 1024px) {
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .main-nav {
+        gap: 20px;
+    }
+    .main-nav a {
+        font-size: 12px;
+    }
+    .header-placeholder {
+        display: none;
+    }
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-title h2 {
+        font-size: 36px;
+    }
+    .container {
+        padding: 0 24px;
+    }
+    .review-card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav {
+        gap: 14px;
+    }
+    .main-nav a {
+        font-size: 11px;
+    }
+    .section-title h2 {
+        font-size: 28px;
+    }
+    .review-card .review-text {
+        font-size: 14px;
+    }
+}
